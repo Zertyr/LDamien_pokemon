@@ -88,4 +88,13 @@ export default class Salameche extends TypeFeu implements Pokemon {
             this._horsJeu = false;
         }
     }
+    
+    /**
+     * change la captivité du pokemon
+     * @param bool: libre ou pas libre | true ou false
+     */
+    prisonner(bool: boolean): void {
+        this._captif = bool;
+    }
+
 }

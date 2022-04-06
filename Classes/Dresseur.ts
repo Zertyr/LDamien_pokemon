@@ -13,7 +13,7 @@ export class Dresseur {
     get nom(){
         return this._nom;
     }
-    
+
     /**
      * Permet d'ajouter des pokeballs au dresseur
      * @param nombre : Indique le nombre à ajouter
@@ -31,7 +31,7 @@ export class Dresseur {
                 let pokeball = new Pokeball;
                 this._pokeballs.push(pokeball)
             }
-            console.log(`Vous avez ajouteé ${nombre} pokeball sur vous, vous possedez donc ${this._pokeballs.length} pokeball.`);
+            console.log(`Vous avez ajouté ${nombre} pokeball sur vous, vous possedez donc ${this._pokeballs.length} pokeball.`);
         }else {
             console.log(`Vous ne pouvez pas ajouter ${nombre} pokeball car vous en avez déjà ${this._pokeballs.length} sur vous.`);
         }
@@ -75,6 +75,7 @@ export class Dresseur {
                 enregistrer = true;
                 pokeball.affecterPokemon(cible);
                 pokeball.affecterDresseur(dresseur);
+                cible.prisonner(enregistrer);
                 console.log(`Le pokemon ${cible._nom} a été ajouté dans votre pokeball numéro ${compteur}.`);
             } 
         })
