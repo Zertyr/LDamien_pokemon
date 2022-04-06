@@ -16,9 +16,8 @@ Non il ne respecte pas.<br>
 **6. Pourquoi ? (1 point)**<br>
 Car ici par exemple si on viens ajouter un nouveau sous-type on doit par la même occasion rajouter une fonction dans type.ts pour calculer les dégâts avec ce nouveau type. Et donc on doit toucher aux autres type de plus on vérifie les types dans un switch(dans mon code)<br>
 
-**7. Le diagramme respecte-t-il le principe de ségrégation des interfaces ? (1 point)**<br>  
+**7. Le diagramme respecte-t-il le principe de ségrégation des interfaces ? (1 point)**<br>
 Non il ne respecte pas le principe de ségrégation des interfaces.<br>
-
 **8. Pourquoi ? (1 point)**<br>
 Car ici nous avons deux interfaces "mères" qui englobe tout les types, tout les pokemons.<br>
 
